@@ -38,5 +38,6 @@ export const SearchFormContainer = styled.form`
       transition: background-color 0.2s;
     }
 
+    cursor: pointer;
   }
 `;

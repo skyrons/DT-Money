@@ -8,7 +8,7 @@ export function SearchTransaction (){
       <input type="text" placeholder="Busque uma transação"/>
 
       <button type="submit">
-        <MagnifyingGlass />
+        <MagnifyingGlass size={20} />
         Buscar
       </button>
     </SearchFormContainer>
