@@ -6,14 +6,14 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 import { Close, Content, Overlay, TransactionType, TransactionTypeButton } from "./styles";
 
-const NewTransactionSchema = z.object({
+const NewTransactionFormSchema = z.object({
   description: z.string(),
   price: z.number(),
-  category: z.string(),
+  category: z.string()
   // type: z.enum(['income', 'outcome'])
 });
 
-type NewTransactionFormInputs = z.infer<typeof NewTransactionSchema>;
+type NewTransactionFormInputs = z.infer<typeof NewTransactionFormSchema>;
 
 async function handleCreateNewTransaction(data: NewTransactionFormInputs){
   await new Promise(resolve => setTimeout(resolve, 1000));
@@ -28,7 +28,7 @@ export function NewTransactionModal (){
     handleSubmit,
     formState: {isSubmitting}
   } = useForm<NewTransactionFormInputs>({
-    resolver: zodResolver(NewTransactionSchema)
+    resolver: zodResolver(NewTransactionFormSchema)
   })
   return(
     <Dialog.Portal>
@@ -47,10 +47,10 @@ export function NewTransactionModal (){
             {...register('description')}
             />
             <input 
-            type="text" 
+            type="number" 
             placeholder="Preço" 
             required
-            {...register('price')}
+            {...register('price', {valueAsNumber: true})}
             />
             <input 
             type="text" 
