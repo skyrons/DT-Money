@@ -23,6 +23,22 @@
       "category": "Celular",
       "price": 2039,
       "createdAt": "2025-05-15T23:27:15.525Z"
+    },
+    {
+      "description": "Camiseta",
+      "price": 70,
+      "category": "Roupas",
+      "type": "outcome",
+      "createdAt": "2025-06-06T19:28:15.783Z",
+      "id": 4
+    },
+    {
+      "description": "Consulta Médica",
+      "price": 700,
+      "category": "Saúde",
+      "type": "outcome",
+      "createdAt": "2025-06-06T21:44:23.859Z",
+      "id": 5
     }
   ]
 }
