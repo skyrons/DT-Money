@@ -39,6 +39,14 @@
       "type": "outcome",
       "createdAt": "2025-06-06T21:44:23.859Z",
       "id": 5
+    },
+    {
+      "description": "Desenvolvimento de Site",
+      "price": 12000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2025-06-11T21:11:28.586Z",
+      "id": 6
     }
   ]
 }
